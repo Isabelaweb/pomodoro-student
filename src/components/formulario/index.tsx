@@ -19,5 +19,5 @@ class Formulario extends React.Component {
         )
     }
 }
-
+// Class components era usado para usar um state, antes da chegada dos hooks
 export default Formulario

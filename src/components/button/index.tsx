@@ -1,13 +1,11 @@
 import React from 'react';
 
-class Button extends React.Component{
-    render(){
-        return(
-            <button>
+function Button (){
+    return(
+        <button>
                 Botão
             </button>
-        )
-    }
+    )
 }
 
 export default Button
