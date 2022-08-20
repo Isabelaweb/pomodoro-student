@@ -1,10 +1,19 @@
 import React from 'react';
+import style from './Botao.module.scss';
 
-function Button (){
+interface ButtonProps {
+    texto: string;
+    abacate?: string;
+    quantidade?: number;
+}
+
+function Button ({texto,abacate}:ButtonProps){
+    
     return(
-        <button>
-                Botão
-            </button>
+        <button className={style.botao}>
+            {texto}
+            {abacate}
+        </button>
     )
 }
 
