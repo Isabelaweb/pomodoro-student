@@ -3,14 +3,16 @@ import style from './Botao.module.scss';
 
 interface ButtonProps {
     texto: string;
+    type?:"button" | "submit" | "reset" 
     abacate?: string;
     quantidade?: number;
 }
 
-function Button ({texto,abacate}:ButtonProps){
+function Button ({texto,abacate,type}:ButtonProps){
     
     return(
-        <button className={style.botao}>
+        <button type={type}className={style.botao}>
+            {type}
             {texto}
             {abacate}
         </button>
