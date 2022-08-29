@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Botao.module.scss';
 
+
 interface ButtonProps {
     texto: string;
     type?:"button" | "submit" | "reset" 
